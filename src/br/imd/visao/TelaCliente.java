@@ -44,7 +44,6 @@ public class TelaCliente extends JInternalFrame implements ActionListener{
 		tid.setBounds(55,10,280,25);
 		lnome.setBounds(10,40,100,30);
 		tnome.setBounds(55,40,280,25);
-		//tid.setBounds(55,10,280,25);
 		lnasc.setBounds(10,70,100,30);
 		tnasc.setBounds(55,70,280,25);
 		lcpf.setBounds(10,100,100,30);

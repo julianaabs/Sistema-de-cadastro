@@ -50,7 +50,14 @@ public class TelaPrincipal extends JFrame implements ActionListener{
 		mItem1.addActionListener(this);	
 		mItem2.addActionListener(this);
 		mItem3.addActionListener(this);
-	}
+		mItem4.addActionListener(new ActionListener(){
+			 public void actionPerformed(ActionEvent e) {
+	                setVisible(false);
+	                System.exit(0);
+	            }
+	        });
+		}
+	
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -68,9 +75,6 @@ public class TelaPrincipal extends JFrame implements ActionListener{
 			TelaProdutos tlProdutos = new TelaProdutos("Produtos");
 			dtp.add(tlProdutos);
 			tlProdutos.setVisible(true);
-		}if(e.getSource() == mItem4){
-			setVisible(false);
-			System.exit(0);
 		}
 	}
 	
